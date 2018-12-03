@@ -9,3 +9,4 @@
 /build
 /captures
 .externalNativeBuild
+/JavaServer/ContactManagerServer/nbproject/private/
