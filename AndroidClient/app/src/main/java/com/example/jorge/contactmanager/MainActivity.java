@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -94,10 +96,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void addContact(String fName, String lName, String phone, String email, String address){
+    public void addContact(String fName, String lName, String phone, String email, String address) {
 
+        Contact contact = new Contact(fName, lName, phone, email, address);
 
-
+        try {
+            HTTPhandler.addContact(contact);
+        }catch (IOException e){
+            //TODO deal with exception
+        }
         //TODO send contact to server
     }
 }
