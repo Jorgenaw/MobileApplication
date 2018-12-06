@@ -8,6 +8,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     EditText firstNameTxt, lastNameTxt, phoneTxt, emailTxt, addressTxt;
-
+    ImageView contactImageImgView;
 
 
     @Override
@@ -25,14 +26,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         configureGoBackButton();
         configureTextFields();
         configureAddContactButton();
 
+        contactImageImgView = (ImageView) findViewById(R.id.imgViewContactImage);
+
+        contactImageImgView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Select Image"), 1);
+            }
+        });
+    }
 
 
-
+    public void onActivityResult(int reqCode, int resCode, Intent data)
+    {
+        if (resCode == RESULT_OK) {
+            if (reqCode == 1)
+                contactImageImgView.setImageURI(data.getData());
+        }
     }
 
     public void configureGoBackButton()

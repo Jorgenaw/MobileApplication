@@ -11,7 +11,7 @@
         android:layout_width="336dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="5dp"
         android:ems="10"
@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtLName"
@@ -98,12 +98,10 @@
         android:layout_marginStart="91dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="91dp"
-        android:layout_marginBottom="11dp"
         android:text="Add contact"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtFName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,21 +112,39 @@
         android:layout_width="166dp"
         android:layout_height="44dp"
         android:layout_marginStart="109dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="109dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="4dp"
         android:enabled="false"
         android:text="Add Contact"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAddress" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/goBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="147dp"
         android:text="Back"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="59dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txtFName"
+        app:layout_constraintEnd_toStartOf="@+id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgViewContactImage"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtFName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        tools:srcCompat="@tools:sample/avatars[0]" />
 </android.support.constraint.ConstraintLayout>
