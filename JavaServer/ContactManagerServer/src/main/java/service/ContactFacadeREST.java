@@ -56,6 +56,7 @@ public class ContactFacadeREST extends AbstractFacade<Contact> {
     @DELETE
     @Path("{id}")
     public void remove(@PathParam("id") Long id) {
+        System.out.println("DELETE request handled");
         super.remove(super.find(id));
     }
 
