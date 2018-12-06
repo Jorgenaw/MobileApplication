@@ -11,3 +11,11 @@
 .externalNativeBuild
 /JavaServer/ContactManagerServer/nbproject/private/
 /JavaServer/ContactManagerServer/build/
+/JavaServer/WebServicesTest/nbproject/private/
+/JavaServer/ContactManagerServer/dist/
+/JavaServer/WebServicesTest/build/
+/JavaServer/WebServicesTest/dist/
+/JavaServer/WebApplicationTest/nbproject/private/
+/JavaServer/ContactManagerServer/target/
+/JavaServer/WebApplicationTest/build/
+/JavaServer/WebApplicationTest/dist/
