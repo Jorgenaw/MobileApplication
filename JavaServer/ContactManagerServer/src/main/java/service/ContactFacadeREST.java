@@ -41,6 +41,7 @@ public class ContactFacadeREST extends AbstractFacade<Contact> {
     @Override
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void create(Contact entity) {
+        System.out.println("POST request handled");
         
         super.create(entity);
     }
@@ -62,6 +63,7 @@ public class ContactFacadeREST extends AbstractFacade<Contact> {
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Contact find(@PathParam("id") Long id) {
+        System.out.println("GET request handled");
         return super.find(id);
     }
 
@@ -69,6 +71,7 @@ public class ContactFacadeREST extends AbstractFacade<Contact> {
     @Override
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public List<Contact> findAll() {
+        System.out.println("GET all request handled");
         return super.findAll();
     }
 
