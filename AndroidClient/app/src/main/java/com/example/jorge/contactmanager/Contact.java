@@ -6,6 +6,16 @@ public class Contact implements Serializable {
 
     private String firstName, lastName,phoneNumber, email, address;
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    private long id;
+
 
     public Contact(String firstName, String lastName, String phoneNumber, String email, String address)
     {

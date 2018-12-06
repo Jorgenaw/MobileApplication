@@ -1,17 +1,23 @@
 package com.example.jorge.contactmanager;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -117,11 +123,28 @@ public class MainActivity extends AppCompatActivity {
 
         Contact contact = new Contact(fName, lName, phone, email, address);
 
-        try {
-            HTTPhandler.addContact(contact);
-        }catch (IOException e){
-            //TODO deal with exception
+
+        List<Contact> contactList = ListActivity.contactList.getList();
+        long highNum = 0;
+
+        Iterator<Contact> it = contactList.iterator();
+
+        while(it.hasNext()){
+            highNum = it.next().getId() + 1;
+
         }
+
+
+        Log.i("SimenId", Long.toString(highNum));
+        contact.setId(highNum);
+        String json = new Gson().toJson(contact);
+
+        try {
+            new SendContactInfo().execute(json);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         //TODO send contact to server
     }
 }
