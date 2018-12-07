@@ -37,7 +37,7 @@ public class ListActivity extends AppCompatActivity implements Serializable {
         setContentView(R.layout.activity_list);
 
 
-        configureRefreshBtn();
+
         configureAddContactBtn();
         createContactList();
         //populateListTest();
@@ -48,17 +48,6 @@ public class ListActivity extends AppCompatActivity implements Serializable {
         refreshList();
 
 
-    }
-
-    private void configureRefreshBtn() {
-        Button btnRefresh = (Button) findViewById(R.id.refreshButton);
-        btnRefresh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                refreshList();
-            }
-        });
     }
 
 

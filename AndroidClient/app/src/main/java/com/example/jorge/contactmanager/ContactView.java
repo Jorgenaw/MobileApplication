@@ -2,7 +2,10 @@ package com.example.jorge.contactmanager;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+<<<<<<< HEAD
 import android.net.Uri;
+=======
+>>>>>>> master
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,22 +28,44 @@ public class ContactView extends AppCompatActivity implements Serializable {
         Contact contact = (Contact)i.getSerializableExtra("Contact");
         configureTextFields(contact);
         configureGoBackButton();
+<<<<<<< HEAD
         configureDialPhone(contact);
+=======
+        configureDeleteButton(contact);
+>>>>>>> master
 
     }
 
 
+<<<<<<< HEAD
     private void configureDialPhone(final Contact contact) {
         findViewById(R.id.contactViewPhone).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+=======
+
+
+
+    private void configureDeleteButton(final Contact contact) {
+        Button btnDelete = (Button) findViewById(R.id.deleteBtn);
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+>>>>>>> master
                 DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         switch (which){
                             case DialogInterface.BUTTON_POSITIVE:
+<<<<<<< HEAD
                                 dialContactPhone(contact.getPhoneNumber());
+=======
+                                new DeleteContact().execute(contact.getId());
+                                startActivity(new Intent(ContactView.this, ListActivity.class));
+>>>>>>> master
                                 break;
 
                             case DialogInterface.BUTTON_NEGATIVE:
@@ -51,6 +76,7 @@ public class ContactView extends AppCompatActivity implements Serializable {
                 };
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
+<<<<<<< HEAD
                 builder.setMessage("Call " + contact.getFirstName() + " ?").setPositiveButton("Yes", dialogClickListener)
                         .setNegativeButton("No", dialogClickListener).show();
 
@@ -64,6 +90,21 @@ public class ContactView extends AppCompatActivity implements Serializable {
 
 
 
+=======
+                builder.setMessage("Are you sure you want to delete this contact?").setPositiveButton("Yes", dialogClickListener)
+                        .setNegativeButton("No", dialogClickListener).show();
+
+
+
+
+
+
+
+            }
+        });
+    }
+
+>>>>>>> master
     public void configureTextFields(Contact contact) {
 
         TextView name = (TextView) findViewById(R.id.contactViewName);
