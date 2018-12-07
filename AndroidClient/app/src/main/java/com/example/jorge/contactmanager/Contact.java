@@ -1,10 +1,22 @@
 package com.example.jorge.contactmanager;
 
+import java.io.File;
 import java.io.Serializable;
 
 public class Contact implements Serializable {
 
     private String firstName, lastName,phoneNumber, email, address;
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
+    private String photo;
+
 
     public long getId() {
         return id;
@@ -17,13 +29,14 @@ public class Contact implements Serializable {
     private long id;
 
 
-    public Contact(String firstName, String lastName, String phoneNumber, String email, String address)
+    public Contact(String firstName, String lastName, String phoneNumber, String email, String address, String photo)
     {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.address = address;
+        this.photo = photo;
     }
 
     public String getFirstName() {

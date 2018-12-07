@@ -1,9 +1,14 @@
 package com.example.jorge.contactmanager;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.PictureDrawable;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -15,7 +20,14 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import com.google.gson.Gson;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import android.util.Base64;
+
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Iterator;
 import java.util.List;
 
@@ -91,8 +103,16 @@ public class MainActivity extends AppCompatActivity {
         btnAddContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addContact(firstNameTxt.getText().toString(), lastNameTxt.getText().toString(), phoneTxt.getText().toString(), emailTxt.getText().toString(), addressTxt.getText().toString() );
+
+
+
+                try {
+                    addContact(firstNameTxt.getText().toString(), lastNameTxt.getText().toString(), phoneTxt.getText().toString(), emailTxt.getText().toString(), addressTxt.getText().toString(),"" );
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 Toast.makeText(getApplicationContext(), firstNameTxt.getText().toString() + " has been added to your contacts", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, ListActivity.class));
             }
         });
 
@@ -125,9 +145,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void addContact(String fName, String lName, String phone, String email, String address) {
+    public void addContact(String fName, String lName, String phone, String email, String address, String photo) {
 
-        Contact contact = new Contact(fName, lName, phone, email, address);
+        Contact contact = new Contact(fName, lName, phone, email, address, photo);
 
 
         List<Contact> contactList = ListActivity.contactList.getList();

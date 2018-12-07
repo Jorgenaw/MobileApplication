@@ -127,31 +127,7 @@ public class ListActivity extends AppCompatActivity implements Serializable {
             //TODO fill contact list
         }
 
-        public void populateListTest () {
 
-
-            for (int i = 0; i < 5; i++) {
-
-                Contact jorgen = new Contact(
-                        "Jørgen",
-                        "Wærås",
-                        "98005125",
-                        "jorgenaw@hotmail.com",
-                        "Berg erikstien 10"
-                );
-                contactList.add(jorgen);
-
-                Contact simen = new Contact(
-                        "Simen",
-                        "Grøvdal",
-                        "98082793",
-                        "sim2901@hotmail.com",
-                        "Paulineplassen 10"
-                );
-                contactList.add(simen);
-            }
-
-        }
 
         public void refreshList(){
             String jsonString = null;
