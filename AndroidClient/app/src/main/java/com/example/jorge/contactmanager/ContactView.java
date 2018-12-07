@@ -2,6 +2,7 @@ package com.example.jorge.contactmanager;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,10 +26,43 @@ public class ContactView extends AppCompatActivity implements Serializable {
         configureTextFields(contact);
         configureGoBackButton();
         configureDeleteButton(contact);
+        configureDialPhone(contact);
 
     }
 
+    private void configureDialPhone(final Contact contact) {
+        findViewById(R.id.contactViewPhone).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        switch (which){
+                            case DialogInterface.BUTTON_POSITIVE:
+                                dialContactPhone(contact.getPhoneNumber());
+                                break;
+
+                            case DialogInterface.BUTTON_NEGATIVE:
+
+                                break;
+                        }
+                    }
+                };
+
+
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
+                builder.setMessage("Call " + contact.getFirstName() + " ?").setPositiveButton("Yes", dialogClickListener)
+                        .setNegativeButton("No", dialogClickListener).show();
+
+            }
+        });
+    }
+
+    private void dialContactPhone(final String phoneNumber) {
+        startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phoneNumber, null)));
+    }
 
 
 

@@ -5,17 +5,20 @@
       <config />
     </shared>
   </component>
+<<<<<<< HEAD
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
+=======
+>>>>>>> master
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd214bc4-fa44-4cd2-9aea-cdc9dd63fc3b" name="Default" comment="" />
+    <list default="true" id="df391510-3c83-49b1-b0c2-848a1c9ecbe7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +39,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
@@ -79,15 +83,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="56" selection-start-line="56" selection-end-line="56" />
+=======
+    <leaf>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="163" column="53" selection-start-line="163" selection-start-column="53" selection-end-line="163" selection-end-column="53" />
+>>>>>>> master
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest">
+          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
+<<<<<<< HEAD
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
@@ -96,13 +105,16 @@
         </entry>
       </file>
       <file leaf-file-name="activity_contact_view.xml" pinned="false" current-in-tab="false">
+=======
+        </entry>
+      </file>
+      <file leaf-file-name="activity_contact_view.xml" pinned="false" current-in-tab="true">
+>>>>>>> master
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_view.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
             <state />
           </provider>
+<<<<<<< HEAD
         </entry>
       </file>
       <file leaf-file-name="ListActivity.java" pinned="false" current-in-tab="true">
@@ -120,22 +132,19 @@
             <state relative-caret-position="1700">
               <caret line="116" selection-start-line="116" selection-end-line="116" />
             </state>
+=======
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+>>>>>>> master
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\jorge\.gradle\wrapper\dists\gradle-4.6-all\bcst21l2brirad8k2ben1letg\gradle-4.6" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\Simen\.gradle\wrapper\dists\gradle-4.6-all\bcst21l2brirad8k2ben1letg\gradle-4.6" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -2615,6 +2624,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/contactmanager/ClientSocket.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/contactmanager/ParameterStringBuilder.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
@@ -2632,14 +2642,25 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/contactmanager/SendContactInfo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/contactmanager/ObjectComparator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/contactmanager/ListActivity.java" />
+=======
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_contact_view.xml" />
+>>>>>>> master
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="165" />
     <option name="y" value="-19" />
     <option name="width" value="1500" />
     <option name="height" value="780" />
+=======
+    <option name="x" value="495" />
+    <option name="y" value="150" />
+    <option name="width" value="1405" />
+    <option name="height" value="1000" />
+>>>>>>> master
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -2648,6 +2669,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+<<<<<<< HEAD
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2659,17 +2681,16 @@
           <select />
         </subPane>
       </pane>
+=======
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+>>>>>>> master
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="AndroidClient" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="AndroidClient" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
             <path>
               <item name="AndroidClient" type="1abcf292:AndroidViewProjectNode" />
@@ -2693,10 +2714,13 @@
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="AndroidClient" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
+=======
+>>>>>>> master
           </expand>
           <select />
         </subPane>
@@ -2704,12 +2728,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="android.project.structure.last.selected" value="gson-2.8.2" />
-    <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="Xperia_XZ1_API_26_2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Mobileogdistribuerteapplikasjoner" />
-    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="device.picker.selection" value="Xperia_API_26" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2828,11 +2849,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dd214bc4-fa44-4cd2-9aea-cdc9dd63fc3b" name="Default" comment="" />
-      <created>1543856015812</created>
+      <changelist id="df391510-3c83-49b1-b0c2-848a1c9ecbe7" name="Default" comment="" />
+      <created>1544142365611</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1543856015812</updated>
+      <updated>1544142365611</updated>
     </task>
     <servers />
   </component>
@@ -2840,8 +2861,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
@@ -2862,14 +2883,45 @@
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+=======
+      <window_info anchor="bottom" id="Android Profiler" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Preview" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info id="Captures" order="2" weight="0.25" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info anchor="bottom" id="Build" weight="0.32905984" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+>>>>>>> master
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Preview" order="4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+<<<<<<< HEAD
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+=======
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+>>>>>>> master
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2877,10 +2929,8 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
+<<<<<<< HEAD
         <state />
       </provider>
     </entry>
@@ -3026,20 +3076,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+=======
+        <state relative-caret-position="360">
+          <caret line="163" column="53" selection-start-line="163" selection-start-column="53" selection-end-line="163" selection-end-column="53" />
+        </state>
+      </provider>
+>>>>>>> master
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/contactmanager/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/contactmanager/ListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -3186,6 +3233,15 @@
           <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_view.xml">
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+>>>>>>> master
     </entry>
   </component>
 </project>
