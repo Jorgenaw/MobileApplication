@@ -45,13 +45,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_contact_view.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_contact_view.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_view.xml">
           <provider editor-type-id="text-editor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="android-designer2">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/contactmanager/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -2542,6 +2551,7 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_contact_view.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/contactmanager/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2780,6 +2790,13 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/contactmanager/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
       </provider>
     </entry>
   </component>
