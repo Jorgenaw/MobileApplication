@@ -17,6 +17,8 @@ import java.util.List;
 
 public class GetContactList extends AsyncTask<String, Void, String> {
 
+    private String URL_LINK = "http://192.168.1.139:8080/ContactManagerServer/webresources/com.mycompany.contactmanagerserver.contact/";
+
     private URL url;
     private String json;
 
@@ -29,7 +31,7 @@ public class GetContactList extends AsyncTask<String, Void, String> {
         StringBuilder stringBuilder = new StringBuilder();
 
         try{
-            url = new URL("http://192.168.1.139:8080/ContactManagerServer/webresources/com.mycompany.contactmanagerserver.contact");
+            url = new URL(URL_LINK);
             con = (HttpURLConnection) url.openConnection();
             //con.getDoInput(true);
             con.setRequestMethod("GET");

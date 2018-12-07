@@ -22,6 +22,8 @@ import java.io.Serializable;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -46,12 +48,13 @@ public class ListActivity extends AppCompatActivity implements Serializable {
         contactListView.setOnItemClickListener(listClick);
 
         refreshList();
-
+        populateList();
 
     }
 
 
-        private AdapterView.OnItemClickListener listClick = new AdapterView.OnItemClickListener() {
+
+    private AdapterView.OnItemClickListener listClick = new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -178,7 +181,7 @@ public class ListActivity extends AppCompatActivity implements Serializable {
                 contactList.add(contact);
             }
 
-            populateList();
+
         }
 
 
