@@ -35,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
         configureGoBackButton();
         configureTextFields();
         configureAddContactButton();
+        configureAddContactPicture();
+
+
+    }
+
+    private void configureAddContactPicture() {
 
         contactImageImgView = (ImageView) findViewById(R.id.imgViewContactImage);
 
