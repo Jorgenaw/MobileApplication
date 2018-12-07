@@ -22,6 +22,8 @@ public class SendContactInfo extends AsyncTask<String, Void, String> {
 
     private URL url;
     private String json;
+    private String URL_LINK = "http://192.168.1.139:8080/ContactManagerServer/webresources/com.mycompany.contactmanagerserver.contact/";
+
 
 
 
@@ -46,7 +48,7 @@ public class SendContactInfo extends AsyncTask<String, Void, String> {
 
         try {
 
-            url = new URL("http://192.168.1.139:8080/ContactManagerServer/webresources/com.mycompany.contactmanagerserver.contact");
+            url = new URL(URL_LINK);
             con = (HttpURLConnection) url.openConnection();
             //con.setReadTimeout(60000 /* milliseconds */);
             //con.setConnectTimeout(60000 /* milliseconds */);

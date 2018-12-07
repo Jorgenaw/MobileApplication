@@ -11,6 +11,8 @@ import java.net.URL;
 public class DeleteContact extends AsyncTask<Long, Void, Void> {
 
 
+    private String URL_LINK = "http://192.168.1.139:8080/ContactManagerServer/webresources/com.mycompany.contactmanagerserver.contact/";
+
     @Override
     protected Void doInBackground(Long... longs) {
 
@@ -19,7 +21,7 @@ public class DeleteContact extends AsyncTask<Long, Void, Void> {
         Long id = longs[0];
 
         try{
-            url = new URL("http://192.168.1.139:8080/ContactManagerServer/webresources/com.mycompany.contactmanagerserver.contact/" + Long.toString(id));
+            url = new URL(URL_LINK + Long.toString(id));
             con = (HttpURLConnection) url.openConnection();
             //con.getDoInput(true);
             con.setRequestMethod("DELETE");
